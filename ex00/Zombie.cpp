@@ -1,8 +1,11 @@
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string name) {_name = name;};
+Zombie::Zombie(std::string name) {_name = name;}
 
-Zombie::~Zombie() {};
+Zombie::~Zombie()
+{
+    std::cout << "Deleting: " << _name << std::endl;
+}
 
 void    Zombie::Announce(void)
 {
