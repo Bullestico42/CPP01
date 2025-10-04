@@ -1,5 +1,5 @@
-NAME := ex00
-SRCS := Zombie.cpp randomChump.cpp newZombie.cpp main.cpp
+NAME := ex02
+SRCS := main.cpp
 OBJS = $(SRCS:.cpp=.o)
 CC = c++ -Wall -Wextra -Werror -std=c++98 #-fsanitize=address,undefined -fno-omit-frame-pointer -g -O0
 RM = rm -f

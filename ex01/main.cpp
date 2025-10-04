@@ -38,6 +38,9 @@ int main()
         std::cout << i << ": ";
         Horde[i].Announce();
     }
+
+    std::cout << std::endl;
+
     delete[] Horde;
     return 0;
 }
