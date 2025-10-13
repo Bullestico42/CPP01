@@ -2,7 +2,7 @@
 
 HumanA::HumanA(std::string NameInput, Weapon &WeaponInput) : _name(NameInput), _wp(WeaponInput) {}
 
-//HumanA::~HumanA() {}
+HumanA::~HumanA() {}
 
 void    HumanA::attack()
 {

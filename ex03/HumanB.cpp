@@ -7,7 +7,7 @@ HumanB::HumanB() : _name("undefined"), _wp(NULL) {}
 HumanB::HumanB(std::string NameInput)
 {
     _name = NameInput;
-    _wp = NULL;
+    _wp = 0;
 }
 
 HumanB::~HumanB() {}

@@ -21,5 +21,14 @@ int main()
         jim.attack();
     }
     std::cout << std::endl;
+    {
+        Weapon club;
+        Weapon torch("Torch");
+        HumanB NoName("");
+        NoName.setWeapon(club);
+        NoName.attack();
+        NoName.setWeapon(torch);
+        NoName.attack();
+    }
     return (0);
 }
