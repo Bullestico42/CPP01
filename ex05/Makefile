@@ -1,4 +1,4 @@
-NAME := ex04
+NAME := ex05
 SRCS := main.cpp Harl.cpp
 OBJS = $(SRCS:.cpp=.o)
 CC = c++ -Wall -Wextra -Werror -std=c++98 #-fsanitize=address,undefined -fno-omit-frame-pointer -g -O0
