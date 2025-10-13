@@ -10,5 +10,5 @@ public:
     HumanB(std::string NameInput);
     ~HumanB();
     void    attack();
-    void    setWeapon(Weapon wp);
+    void    setWeapon(Weapon &wp);
 };
