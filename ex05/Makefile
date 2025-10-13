@@ -6,7 +6,7 @@ RM = rm -f
 all: $(NAME)
 
 # Compilation
-$(NAME): $(OBJS)
+$(NAME): $(OBJS)	
 	@printf "\rCompiling $(NAME)..."
 	@$(CC) $(CFLAGS) $(OBJS) $(LIBFT) -o $(NAME) $(LDFLAGS)
 

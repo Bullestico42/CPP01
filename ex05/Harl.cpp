@@ -1,12 +1,6 @@
 #include "Harl.hpp"
+#define LVLINDEX 4
 
-Harl::Harl()
-{
-}
-
-Harl::~Harl()
-{
-}
 
 void    Harl::debug() {
     std::cout << "love having extra bacon for my" << 
@@ -19,10 +13,27 @@ void Harl::info() {
 }
 
 void Harl::warning() {
-    std::cout << " think I deserve to have some extra bacon for free. " << 
+    std::cout << "I think I deserve to have some extra bacon for free. " << 
     "I’ve been coming for years, whereas you started working here just last month." << std::endl;
 }
 
 void Harl::error() {
     std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
+}
+
+void    Harl::complain(std::string level) {
+    void    (Harl::*funcPtr[])() = {
+        &Harl::debug,
+        &Harl::info,
+        &Harl::warning,
+        &Harl::error
+    };
+
+    std::string levelsIndex[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+
+    for (size_t i = 0; i < LVLINDEX; i++)
+        if (level == levelsIndex[i]) {
+            (this->*funcPtr[i])();
+            return ;
+        }
 }
