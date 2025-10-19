@@ -23,12 +23,13 @@ int main()
     std::cout << std::endl;
     {
         Weapon club;
-        Weapon torch("Torch");
-        HumanB NoName("");
-        NoName.setWeapon(club);
-        NoName.attack();
-        NoName.setWeapon(torch);
-        NoName.attack();
+        Weapon sword("Netherite Sword [Sharpness V | Unbreaking III | Fire Aspect II]");
+        HumanB PtitBiscuit("P'tit Biscuit");
+        PtitBiscuit.attack();
+        PtitBiscuit.setWeapon(sword);
+        PtitBiscuit.attack();
+        PtitBiscuit.setWeapon(club);
+        PtitBiscuit.attack();
     }
     return (0);
 }
