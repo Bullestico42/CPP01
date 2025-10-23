@@ -13,7 +13,6 @@ int main(void)
     std::cout << "1. stringPTR: " << stringPTR << std::endl;
     std::cout << "2. stringREF: " << & stringREF << std::endl << std::endl;
 
-    std::cout << "2. stringREF: " << & stringREF << std::endl << std::endl;
     std::cout << "-------PRINTING_VALUE--------" << std::endl;
     std::cout << "1. stringPTR: " << *stringPTR << std::endl;
     std::cout << "2. stringREF: " << stringREF << std::endl;
